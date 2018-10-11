@@ -42,7 +42,7 @@ Yes, a bot. A bot that will never get tired of checking the DMV webpage for you,
     then add
 
     ```
-    */1 * * * * cd PATH/TO/dmv-notifier/ && ./dmv.sh SAN_FRANCISCO 140 >/tmp/stdout.log 2>/tmp/stderr.log
+    */1 * * * * cd PATH/TO/dmv-notifier/ && ./dmv.sh SAN_FRANCISCO 14 >/tmp/stdout.log 2>/tmp/stderr.log
     ```
 
     Common pitfall: your cron setup may or may not have PATH set up correctly. If it doesn't, you need to set PATH to include the directory where your `casperjs` cli is located. You can find this out with `which casperjs`.
